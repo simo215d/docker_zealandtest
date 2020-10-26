@@ -7,8 +7,6 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./nodes
     steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -23,6 +21,6 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: ./nodes
+          context: ./nodes/test
           push: true
           tags: simo215d/zealandtest:latest
