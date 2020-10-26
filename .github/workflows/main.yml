@@ -21,6 +21,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: ./nodes/test
+          context: .
+          file: /nodes/Dockerfile
           push: true
           tags: simo215d/zealandtest:latest
