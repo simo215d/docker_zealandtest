@@ -4,13 +4,11 @@ on:
   push:
     branches: master
 
-defaults:
-  run:
-    working-directory: ./nodes
-
 jobs:
   main:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./nodes
     steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
