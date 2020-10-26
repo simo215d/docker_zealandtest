@@ -27,3 +27,6 @@ jobs:
         with:
           push: true
           tags: simo215d/zealandtest:latest
+          args: |
+            run: echo 'yo hey hey------'
+            run: ls
