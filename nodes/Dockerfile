@@ -10,7 +10,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm test
+#RUN npm test
 
 EXPOSE 3000
 
