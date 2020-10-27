@@ -11,3 +11,6 @@ docker network connect cluster reverseProxy
 docker network connect cluster node
 
 docker network inspect cluster
+
+
+hej hej ehj
