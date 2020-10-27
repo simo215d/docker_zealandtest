@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 #RUN npm run test
-CMD [ "npm", "test" ]
+CMD [ "npm", "run", "test" ]
 
 EXPOSE 3000
 
